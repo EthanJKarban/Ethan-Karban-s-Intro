@@ -23,6 +23,7 @@ public class MovePlat : MonoBehaviour
         if(transform.position == nextPosition)
         {
             nextPosition = (nextPosition == pointA.position) ? pointB.position : pointA.position;
+            return;
         }
     }
 }
